@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  padding: 10px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Layout for App */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px rgba(171, 170, 170, 0.1);
+}
+
+/* Task Header */
+.App h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Add Task Button */
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Button Group for Edit/Delete */
+.btn-group .btn {
+  margin-right: 5px;
+}
+
+.btn-primary, .btn-danger {
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Form Styles */
+.form-label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+textarea.form-control {
+  height: 100px;
+  resize: none;
+}
+
+/* Table for Articles */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+table th {
+  background-color: #f1f1f1;
+}
+
+table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .App {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .btn-success {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+  }
+
+  table th, table td {
+      padding: 8px;
+      font-size: 0.8rem;
+  }
+
+  /* Stacking columns for small screens */
+  .row {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .col {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+/* Adjust layout for larger screens */
+@media (min-width: 992px) {
+  .App {
+      max-width: 1400px;
+  }
+
+  .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .col {
+      flex: 1;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  .btn-success {
+      font-size: 1.1rem;
+  }
+}
